@@ -1,4 +1,20 @@
-const p = document.getElementById('timer')
-let timeId = setInterval (()=>{p.textContent = Number(p.textContent)-1}, 1000);
+const p = document.getElementById("timer");
+const countTimer = function () {
+  if (Number(p.textContent) >= 1) {
+    p.textContent = Number(p.textContent) - 1;
+  } else if (Number(p.textContent) === 0) {
+    alert("Вы победили в конкурсе!");
+  }
+};
 
-setTimeout(() => { clearInterval(timeId); alert('Вы победили в конкурсе!'); }, p.textContent*1000);
+setInterval(countTimer, 100);
+
+// const p = document.getElementById("timer");
+// let timeId = setInterval(() => {
+//   p.textContent = Number(p.textContent) - 1;
+// }, 1000);
+
+// setTimeout(() => {
+//   clearInterval(timeId);
+//   alert("Вы победили в конкурсе!");
+// }, p.textContent * 1000);
