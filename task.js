@@ -1,6 +1,6 @@
 const p = document.getElementById("timer");
 const countTimer = function () {
-  if (Number(p.textContent) >= 1) {
+  if (Number(p.textContent) > 0) {
     p.textContent = Number(p.textContent) - 1;
   } else if (Number(p.textContent) === 0) {
     alert("Вы победили в конкурсе!");
