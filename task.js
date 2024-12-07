@@ -7,7 +7,7 @@ const countTimer = function () {
   }
 };
 
-setInterval(countTimer, 100);
+setInterval(countTimer, 1000);
 
 // const p = document.getElementById("timer");
 // let timeId = setInterval(() => {
